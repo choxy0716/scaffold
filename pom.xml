@@ -12,6 +12,7 @@
         <module>datasource</module>
         <module>quartz</module>
         <module>common</module>
+        <module>monitor</module>
     </modules>
 
     <properties>
@@ -22,6 +23,8 @@
         <spring-boot.version>2.7.5</spring-boot.version>
         <junit.version>4.13</junit.version>
         <lombok.version>1.18.24</lombok.version>
+        <mysql-driver.version>8.0.28</mysql-driver.version>
+        <quartz.version>2.3.2</quartz.version>
     </properties>
 
     <dependencies>
@@ -61,6 +64,25 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
+        <!--Database Driver-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql-driver.version}</version>
+        </dependency>
+
+        <!--Quartz-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-quartz</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.quartz-scheduler</groupId>
+            <artifactId>quartz</artifactId>
+            <version>${quartz.version}</version>
+        </dependency>
+
     </dependencies>
 
 
