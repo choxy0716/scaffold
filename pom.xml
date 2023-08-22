@@ -13,6 +13,8 @@
         <module>quartz</module>
         <module>common</module>
         <module>monitor</module>
+        <module>web</module>
+        <module>kafka</module>
     </modules>
 
     <properties>
@@ -25,6 +27,7 @@
         <lombok.version>1.18.24</lombok.version>
         <mysql-driver.version>8.0.28</mysql-driver.version>
         <quartz.version>2.3.2</quartz.version>
+        <apache-httpclient.version>5.1.4</apache-httpclient.version>
     </properties>
 
     <dependencies>
@@ -82,6 +85,19 @@
             <artifactId>quartz</artifactId>
             <version>${quartz.version}</version>
         </dependency>
+
+        <!--apache httpclient-->
+        <dependency>
+            <groupId>org.apache.httpcomponents.client5</groupId>
+            <artifactId>httpclient5</artifactId>
+            <version>${apache-httpclient.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents.client5</groupId>
+            <artifactId>httpclient5-fluent</artifactId>
+            <version>${apache-httpclient.version}</version>
+        </dependency>
+
 
     </dependencies>
 

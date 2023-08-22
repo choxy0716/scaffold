@@ -6,11 +6,10 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class CustomHikariDatasource extends AbstractHikariDatasource{
+public class CustomHikariDatasource extends AbstractDatasource{
 
     public void init() {
         HikariConfig hikariConfig = new HikariConfig();
-
     }
 
 
